@@ -35,6 +35,11 @@
 	make all
 	make install
 	make runtest
+	
+	그리고 사용할 때는 코드에(setlayer.py)
+	caffe_path = '/media/vit/DATA/Tensor/caffe_train' 이런식으로 설치된 경로를 적어줘야한다.
+	
+	
 
 # Caffe_train
 
