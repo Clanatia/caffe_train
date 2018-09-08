@@ -1,21 +1,19 @@
 # 기본 설정 설치
 1. [opencv install](http://webnautes.tistory.com/1030) with opencv_contrib on cuda (기본적으로 3대 버전을 추천, cmake 설정이 3대 버전으로 되어있음)	
 2. cuda version 7.0 이상설치	
-
-2-1. [CUDA install](https://igotit.tistory.com/entry/CUDA-Toolkit-8-Ubuntu-16-%EC%84%A4%EC%B9%98)
-
-2-2. [CUDNN install](https://igotit.tistory.com/entry/cuDNN-Ubuntu-%EC%97%90-%EC%84%A4%EC%B9%98)	
+[CUDA install](https://igotit.tistory.com/entry/CUDA-Toolkit-8-Ubuntu-16-%EC%84%A4%EC%B9%98)
+[CUDNN install](https://igotit.tistory.com/entry/cuDNN-Ubuntu-%EC%97%90-%EC%84%A4%EC%B9%98)	
 
 # 딥러닝 train을 위한 전용 lib 설치
-1. git clone https://github.com/CMU-Perceptual-Computing-Lab/caffe_train
-2.make파일 python 설정. 
-자신의 python 버전에 맞게 설정해주어야함.
-PYTHON_LIBRARIES ?= boost_python python2.7.
-or.
-PYTHON_LIBRARIES ?= boost_python-py35 python3.5m.
-or.
-PYTHON_LIBRARIES ?= boost_python-py35 python3.5.
-3. Makefile.config 설정 (고쳐야될 부분만 적었습니다)
+	1. git clone https://github.com/CMU-Perceptual-Computing-Lab/caffe_train
+	2.make파일 python 설정
+	자신의 python 버전에 맞게 설정해주어야함
+	PYTHON_LIBRARIES ?= boost_python python2.7
+	or
+	PYTHON_LIBRARIES ?= boost_python-py35 python3.5m
+	or
+	PYTHON_LIBRARIES ?= boost_python-py35 python3.5
+	3. Makefile.config 설정 (고쳐야될 부분만 적었습니다)
 	
 	CUDA_ARCH := -gencode arch=compute_20,code=sm_20 \
 		-gencode arch=compute_20,code=sm_21 \
@@ -30,13 +28,13 @@ PYTHON_LIBRARIES ?= boost_python-py35 python3.5.
 	PYTHON_INCLUDE := /usr/include/python3.5m \
 		/usr/lib/python3.5/dist-packages/numpy/core/include
 	
-4. build
-mkdir build
-cd build
-cmake ..
-make all
-make install
-make runtest
+	4. build
+	mkdir build
+	cd build
+	cmake ..
+	make all
+	make install
+	make runtest
 
 # Caffe_train
 
