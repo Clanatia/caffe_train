@@ -6,13 +6,15 @@
 
 # 딥러닝 train을 위한 전용 lib 설치
 	1. git clone https://github.com/CMU-Perceptual-Computing-Lab/caffe_train
-	2. make파일 python 설정
+	
+	2. make파일 python 설정	
 	자신의 python 버전에 맞게 설정해주어야함
 	PYTHON_LIBRARIES ?= boost_python python2.7
 	or
 	PYTHON_LIBRARIES ?= boost_python-py35 python3.5m
 	or
 	PYTHON_LIBRARIES ?= boost_python-py35 python3.5
+	
 	3. Makefile.config 설정 (고쳐야될 부분만 적었습니다)
 	
 	CUDA_ARCH := -gencode arch=compute_20,code=sm_20 \
