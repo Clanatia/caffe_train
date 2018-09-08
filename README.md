@@ -1,10 +1,8 @@
 # 기본 설정 설치
 1. [opencv install](http://webnautes.tistory.com/1030) with opencv_contrib on cuda (기본적으로 3대 버전을 추천, cmake 설정이 3대 버전으로 되어있음)	
-2. cuda version 7.0 이상설치
-
-2-1. [CUDA install](https://igotit.tistory.com/entry/CUDA-Toolkit-8-Ubuntu-16-%EC%84%A4%EC%B9%98)
-
-2-2. [CUDNN install](https://igotit.tistory.com/entry/cuDNN-Ubuntu-%EC%97%90-%EC%84%A4%EC%B9%98)
+2. cuda version 7.0 이상설치	
+2-1. [CUDA install](https://igotit.tistory.com/entry/CUDA-Toolkit-8-Ubuntu-16-%EC%84%A4%EC%B9%98)	
+2-2. [CUDNN install](https://igotit.tistory.com/entry/cuDNN-Ubuntu-%EC%97%90-%EC%84%A4%EC%B9%98)	
 
 # 딥러닝 train을 위한 전용 lib 설치
 1. git clone https://github.com/CMU-Perceptual-Computing-Lab/caffe_train
